@@ -14,7 +14,7 @@ export class StageService {
   private stagesUrl = 'https://webapiexample20220211141059.azurewebsites.net/Stage/GetStages';  // URL to web api
   private stageUrl = 'https://webapiexample20220211141059.azurewebsites.net/Stage/GetStageById?id=';
   httpOptions = {
-    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+    headers: new HttpHeaders({ 'Access-Control-Allow-Origin':'*' , 'Content-Type': 'application/json' })
   };
 
   getStages(): Observable<Stage[]> {

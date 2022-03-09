@@ -17,7 +17,7 @@ export class HeroService {
   private postheroesUrl = 'https://webapiexample20220211141059.azurewebsites.net/Personnage/NewSimpleCharacter';  // URL to web api
 
   httpOptions = {
-    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+    headers: new HttpHeaders({ 'Access-Control-Allow-Origin':'*' , 'Content-Type': 'application/json' })
   };
 
   getHeroes(): Observable<Hero[]> {
