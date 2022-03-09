@@ -1,0 +1,14 @@
+<div *ngIf="hero">
+
+  <h2>{{hero.nom | uppercase}}</h2>
+  <img class="w-100" [src]=hero.sprite>
+  <div>
+    <label for="hero-nom">Character name: </label>
+    <input id="hero-nom" [(ngModel)]="hero.nom" placeholder="nom">
+  </div>
+
+</div>
+<button class="button" type="button" (click)="goBack()">go back</button>
+<button class="button" type="button" (click)="save()">save</button>
+
+<button class="select" type="button" (click)="select()">Select Player</button>

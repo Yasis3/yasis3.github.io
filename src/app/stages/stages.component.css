@@ -1,0 +1,127 @@
+/* HeroesComponent's private CSS styles */
+.stages {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 25em;
+}
+
+  .stages li {
+    cursor: pointer;
+    position: relative;
+  }
+
+    .stages li:hover {
+      left: .1em;
+    }
+
+    .stages li.selected:hover {
+      background-color: #505050;
+      color: white;
+    }
+
+    .stages li.selected:active {
+      background-color: black;
+      color: white;
+    }
+
+  .stages .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: #405061;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    min-width: 16px;
+    text-align: right;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+  }
+
+input {
+  display: block;
+  width: 60%;
+  padding: .5rem;
+  margin: 1rem 0;
+  box-sizing: border-box;
+}
+
+.stages a {
+  color: #333;
+  text-decoration: none;
+  background-color: #EEE;
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+}
+
+  .stages a:hover {
+    color: #2c3a41;
+    background-color: #e6e6e6;
+  }
+
+  .stages a:active {
+    background-color: #525252;
+    color: #fafafa;
+  }
+
+.add-button {
+  padding: .5rem 1.5rem;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+  .add-button:hover {
+    color: white;
+    background-color: #42545C;
+  }
+
+button.delete {
+  position: absolute;
+  left: 410px;
+  top: 5px;
+  background-color: white;
+  color: #525252;
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 1px 10px 3px 10px;
+}
+
+  button.delete:hover {
+    background-color: #525252;
+    color: white;
+  }
+
+nav a {
+  padding: 1rem;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #e8e8e8;
+  color: #3d3d3d;
+  border-radius: 4px;
+}
+
+  nav a:hover {
+    color: white;
+    background-color: #42545C;
+  }
+
+  nav a.active {
+    background-color: black;
+  }
+
+marquee {
+  color: darkred;
+  background: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
