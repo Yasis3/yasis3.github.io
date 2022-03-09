@@ -1,7 +1,6 @@
 <div *ngIf="stage">
-
-  <h2>{{stage.nom | uppercase}}</h2>
-  <img class="w-100" [src]=stage.sprite>
+  <p style="background-image:url({{stage.sprite}});">
 </div>
-<button type="button" (click)="goBack()">go back</button>
-<li><a routerLink="/fight" routerLinkActive="active">Fight !</a></li>
+  <button type="button" (click)="goBack()">go back</button>
+  <li><a routerLink="/fight" routerLinkActive="active">Fight !</a></li>
+

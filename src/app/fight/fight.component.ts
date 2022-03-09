@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 import { Hero } from '../hero';
 import { Equipe } from '../equipe';
 import { ActivatedRoute } from '@angular/router';
@@ -19,7 +19,7 @@ export class FightComponent implements OnInit {
     private route: ActivatedRoute,
     private FightService: FightService,
     private heroService: HeroService,
-    private location: Location
+    private location: Location,
   ) {}
 
   ngOnInit(): void {
