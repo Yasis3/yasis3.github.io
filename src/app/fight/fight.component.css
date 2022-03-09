@@ -1,0 +1,8 @@
+img {
+  display: block;
+  position: absolute;
+  margin-left: 0;
+  bottom: 0;
+  height: 35%;
+  width: 15%;
+}

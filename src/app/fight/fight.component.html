@@ -1,0 +1,9 @@
+<div *ngIf="team">
+
+  <h2>{{team.id}}</h2>
+  <h2>{{team.idPerso1}}</h2>
+  <div *ngIf="hero">
+    <h2>{{hero.nom | uppercase}}</h2>
+    <img class="w-100" [src]=hero.sprite>
+  </div>
+</div>
